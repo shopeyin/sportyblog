@@ -73,3 +73,14 @@ def create_auth_token(sender,instance=None, created=False,**kwargs):
     if created:
         Token.objects.create(user=instance)
     
+
+
+
+
+class Groups(models.Model):
+    group_name 				= models.CharField(max_length=2000, null=False, blank=False)
+    group_description 		= models.CharField(max_length=2000, null=False, blank=False)
+    admin_name 				= models.CharField(max_length=2000, null=False, blank=False)
+    amount_to_be_saved 		= models.DecimalField(max_digits=10, decimal_places=2)
+    maximum_capacity        = models.IntegerField()
+    is_searchable           = models.BooleanField(default=True)

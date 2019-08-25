@@ -32,3 +32,7 @@ def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
 		instance.slug = slugify(instance.author.username + "-" + instance.title)
 
 pre_save.connect(pre_save_blog_post_receiver, sender=BlogPost)
+
+
+
+

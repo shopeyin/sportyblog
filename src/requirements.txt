@@ -3,5 +3,5 @@ gunicorn==19.9.0
 Pillow==6.1.0
 pytz==2019.2
 sorl-thumbnail==12.5.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 virtualenv==16.6.1
